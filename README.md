@@ -4,7 +4,7 @@ Master’s student in Computer Science and Technology at Wuhan University of Tec
 
 ## About
 
-My academic work includes computational approaches to scientific problems and the study of molecular structures and electronic properties.
+My academic work includes computer science with research area of multimodal EHR corpus annotation using LLM
 
 ## Publication
 
