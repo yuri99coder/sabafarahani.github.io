@@ -1,6 +1,3 @@
-Create a file named `styles.css` in the repository root and paste this in it. It matches the HTML you shared and uses a clean, minimal academic layout.
-
-```css
 * {
   box-sizing: border-box;
 }
@@ -306,4 +303,3 @@ a:focus-visible {
     font-size: 14px;
   }
 }
-```
