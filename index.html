@@ -1,26 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Academic homepage for Saba Farahani, Master's student in Computer Science and Technology at Wuhan University of Technology."
-    />
-    <title>Saba Farahani | Academic Profile</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Saba Farahani’s academic homepage, with research interests and publications.">
+    <title>Saba Farahani | Academic Homepage</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="topbar">
       <div class="topbar-inner">
         <a href="#top" class="brand">Saba Farahani</a>
-        <nav class="nav" aria-label="Main menu">
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#top">Home</a>
           <a href="#about">About</a>
           <a href="#research">Research</a>
           <a href="#publications">Publications</a>
@@ -29,84 +22,96 @@
       </div>
     </header>
 
-    <main class="page" id="top">
-      <aside class="sidebar">
-        <div class="profile-box">
-          <div class="profile-photo">SF</div>
-          <h1>Saba Farahani</h1>
-          <p class="role">Master’s Student</p>
-          <p class="role-sub">Computer Science and Technology</p>
-          <p class="school">Wuhan University of Technology</p>
-
-          <div class="profile-links">
-            <a href="https://orcid.org/0009-0009-8937-1353" target="_blank" rel="noopener noreferrer">ORCID</a>
-            <a href="https://scholar.google.com/citations?user=LYnRiNcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-            <a href="https://www.linkedin.com/in/saba-farahani" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://github.com/yuri99coder" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <div class="page">
+      <aside class="sidebar" aria-label="Author profile">
+        <div class="profile">
+          <span class="profile-photo" aria-hidden="true">SF</span>
+          <div>
+            <p class="profile-name">Saba Farahani</p>
+            <p class="profile-role">Master’s student, WHUT</p>
           </div>
         </div>
+        <ul class="profile-links">
+          <li><a href="https://www.whut.edu.cn/">Wuhan University of Technology</a></li>
+          <li><a href="https://github.com/yuri99coder">GitHub</a></li>
+          <li><a href="https://scholar.google.com/citations?user=LYnRiNcAAAAJ&amp;hl=en">Google Scholar</a></li>
+          <li><a href="https://orcid.org/0009-0009-8937-1353">ORCID</a></li>
+          <li><a href="https://www.linkedin.com/in/saba-farahani">LinkedIn</a></li>
+        </ul>
       </aside>
 
-      <div class="content">
-        <section class="hero" id="about">
-          <p class="eyebrow">Wuhan University of Technology</p>
-          <h2>Academic profile</h2>
+      <main id="main">
+        <header class="hero">
+          <p class="eyebrow"><a href="https://www.whut.edu.cn/">Wuhan University of Technology</a></p>
+          <h1>Saba Farahani</h1>
+          <p class="hero-role">Master’s Student</p>
+          <p class="hero-summary">Computer Science and Technology</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#publications">Selected publication</a>
+            <a class="button button-outline" href="#research">Research areas</a>
+          </div>
+        </header>
+
+        <section class="section" id="about">
+          <h2>About</h2>
           <p>
-            I am Saba Farahani, a master’s student in Computer Science and Technology at Wuhan
-            University of Technology. My research interests are rooted in computational and
-            scientific methods, with a focus on modeling complex systems and understanding
-            structure-property relationships through analytical and computational approaches.
+            I am a master’s student in Computer Science and Technology at
+            <a href="https://www.whut.edu.cn/">Wuhan University of Technology</a>.
+            My current research focuses on using large language models to annotate multimodal
+            electronic health record (EHR) corpora.
           </p>
           <p>
-            I am particularly motivated by interdisciplinary work that connects theoretical
-            thinking with practical computational problems in science and engineering. My goal is
-            to contribute to rigorous academic research and continue developing my expertise in
-            modern computational methods.
+            My broader interests include scientific computing, modeling complex systems, and
+            using computational methods to study structure–property relationships.
           </p>
         </section>
 
         <section class="section" id="research">
-          <h3>Research Interests</h3>
-          <div class="tag-list">
-            <span>Computational Science</span>
-            <span>Scientific Computing</span>
-            <span>Computational Chemistry</span>
-            <span>Molecular Modeling</span>
-            <span>Electronic Structure</span>
-            <span>Applied Mathematics</span>
-            <span>Data-Driven Research</span>
-            <span>Machine Learning</span>
+          <h2>Research Areas</h2>
+          <div class="research-grid">
+            <article class="research-card">
+              <h3>Multimodal EHR Annotation</h3>
+              <p>Corpus annotation with large language models, machine learning, and data-driven research.</p>
+            </article>
+            <article class="research-card">
+              <h3>Computational Science</h3>
+              <p>Scientific computing, applied mathematics, computational chemistry, molecular modeling, and electronic structure.</p>
+            </article>
           </div>
         </section>
 
         <section class="section" id="publications">
-          <h3>Selected Publication</h3>
-          <article class="paper-card">
-            <h4>
-              A Comparative Overview on the Ground and First Excited States of Dimesityl-Substituted
-              Sila- and Germabenzenes
-            </h4>
-            <p class="authors">Saba Farahani, Fatemeh Fani, Davoud Dastan</p>
-            <p class="year">May 2024</p>
-            <div class="paper-links">
-              <a href="https://ejtas.com/index.php/journal/article/view/1361" target="_blank" rel="noopener noreferrer">View article</a>
-              <a href="https://doi.org/10.5281/zenodo.11019144" target="_blank" rel="noopener noreferrer">DOI</a>
-            </div>
-          </article>
+          <h2>Selected Publication</h2>
+          <ul class="publication-list">
+            <li>
+              <strong>A Comparative Overview on the Ground and First Excited States of Dimesityl-Substituted Sila- and Germabenzenes.</strong>
+              <p>Saba Farahani, Fatemeh Fani, and Davoud Dastan, 2024.</p>
+              <div class="publication-links">
+                <a href="https://ejtas.com/index.php/journal/article/view/1361">View article</a>
+                <a href="https://doi.org/10.5281/zenodo.11019144">DOI</a>
+              </div>
+            </li>
+          </ul>
         </section>
 
         <section class="section" id="contact">
-          <h3>Contact</h3>
+          <h2>Contact</h2>
           <p>
-            I welcome opportunities for collaboration, academic discussion, and research exchange.
-            Please connect through my
-            <a href="https://www.linkedin.com/in/saba-farahani" target="_blank" rel="noopener noreferrer">LinkedIn</a>,
-            <a href="https://orcid.org/0009-0009-8937-1353" target="_blank" rel="noopener noreferrer">ORCID</a>,
-            or <a href="https://scholar.google.com/citations?user=LYnRiNcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-            profile.
+            I welcome opportunities for collaboration and academic discussion. Connect with me on
+            <a href="https://www.linkedin.com/in/saba-farahani">LinkedIn</a>
+            or find my research on
+            <a href="https://scholar.google.com/citations?user=LYnRiNcAAAAJ&amp;hl=en">Google Scholar</a>
+            and <a href="https://orcid.org/0009-0009-8937-1353">ORCID</a>.
           </p>
         </section>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span>© Saba Farahani</span>
+        <a href="https://github.com/yuri99coder">GitHub</a>
       </div>
-    </main>
+    </footer>
   </body>
 </html>
