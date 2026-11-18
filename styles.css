@@ -114,17 +114,12 @@ a:focus-visible {
 }
 
 .profile-photo {
-  display: grid;
+  display: block;
   width: 132px;
-  aspect-ratio: 1;
+  height: auto;
   margin-bottom: 0.75rem;
-  place-items: center;
   border: 1px solid var(--border);
   border-radius: 50%;
-  background: #eef6f7;
-  color: var(--ink);
-  font-size: 2.25rem;
-  font-weight: 700;
 }
 
 .profile-name {
@@ -318,7 +313,6 @@ a:focus-visible {
   .profile-photo {
     width: 54px;
     margin: 0;
-    font-size: 1.05rem;
   }
 
   .profile-links {
