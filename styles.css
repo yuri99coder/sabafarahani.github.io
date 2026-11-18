@@ -114,12 +114,15 @@ a:focus-visible {
 }
 
 .profile-photo {
+  --photo-size: 108px;
   display: block;
-  width: 132px;
-  height: auto;
+  flex: none;
+  width: var(--photo-size);
+  height: var(--photo-size);
   margin-bottom: 0.75rem;
   border: 1px solid var(--border);
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .profile-name {
@@ -311,7 +314,7 @@ a:focus-visible {
   }
 
   .profile-photo {
-    width: 54px;
+    --photo-size: 44px;
     margin: 0;
   }
 
